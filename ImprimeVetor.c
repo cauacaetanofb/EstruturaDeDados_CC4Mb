@@ -11,7 +11,7 @@ Write your code in this editor and press "Run" button to compile and execute it.
 void imprime(int *m, int n){
     int i;
     for(i = 0; i < n; i++)
-        printf("%d \t", m[i]);
+        printf("%d | \t", m[i]);
 }
 
 int main()
