@@ -18,17 +18,15 @@ void imprimirVet(int *m, int n){
 
 void insertionSort(int *v, int n){
     int aux, j;
+    
     for(int i= 1; i< n; i++){
         aux = v[i];
-        j = i- 1;
         
-        while(j>= 0 && v[j] > aux){
-            v[j+ 1] = v[j];
-            j--;
+        for(j=i;(j>0) && (aux<v[j-1]); j--){
+            v[j] = v[j-1];
         }
-        v[j+ 1] = aux;
+        v[j] = aux;
     }
-    
 }
 
 int main()
