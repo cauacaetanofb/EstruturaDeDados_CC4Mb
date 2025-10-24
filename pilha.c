@@ -3,7 +3,7 @@
 
 typedef struct elemento{
     int conteudo;
-    elemento *prox;
+    struct elemento *prox;
 }Elem;
 
 typedef struct elemento* Pilha;
